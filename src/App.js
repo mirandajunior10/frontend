@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+//Importação de libs e CSS
+import React from 'react';
 import './App.css';
 
-import Main from "./Pages/Main";
+//Importação de rotas de páginas
+import Routes from './routes';
+  
+const App = () => <Routes/>;
 
-
-class App extends Component {
-  render(){
-    return <Main />;
-  }
-}
 
 export default App;
