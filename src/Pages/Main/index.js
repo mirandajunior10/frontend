@@ -15,7 +15,8 @@ export default class Main extends Component {
        const response = await api.post('boxes', {
            title: this.state.newBox,
        });
-       console.log(response.data);
+       this.props.history.push(`/box/${response.data._id}`);
+
     };
 
     handleInputChange = (e) => {
